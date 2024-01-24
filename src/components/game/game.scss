@@ -1,0 +1,32 @@
+.shake {
+    animation: shake 0.1s 5;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+.clean {
+    animation: cleanme 0.2s 1;
+    transform: translateY(-600px);
+}
+
+@keyframes cleanme {
+    0% {
+        transform: translateY(0px) rotate3d(0, 0, 0, 0deg);
+    }
+    100% {
+        transform: translateY(-600px) rotate3d(0, 0, 0, 0deg);
+    }
+}

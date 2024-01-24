@@ -1,0 +1,55 @@
+.level {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    line-height: 2;
+    font-family: menlo, monospace;
+    transition: background-color 0.5s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(133, 133, 133, 0.2);
+    }
+}
+
+.level--current {
+    background-color: rgba(133, 133, 133, 0.2);
+}
+
+.with-help-info {
+    color: rgb(145, 121, 121);
+}
+
+.checkmark {
+    display: inline-block;
+    width: 8px;
+    height: 15px;
+    margin: -3px 10px 3px;
+    border: solid rgb(148, 148, 148);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+
+    &.completed {
+        border-color: rgb(0, 255, 0);
+    }
+}
+
+.button--reset-progress {
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 5px 10px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgb(255, 61, 61);
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.5s ease-in-out;
+    border-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(255, 0, 0, 0.8);
+    }
+}
